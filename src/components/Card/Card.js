@@ -8,7 +8,8 @@ export default function Card({val}) {
         <div className='bg-black rounded flex justify-center items-center h-28 mb-3'>
         <img className='h-24' src={logo} alt={name} />
         </div>
-
+        <h2>Topic: {name}</h2>
+        <p>Quiz: {total}</p>
         <Link to={`quiz/${id}`}><button className='border-stone-900 border-2 mt-2 px-7'>Start</button></Link>
     </div>
   )
