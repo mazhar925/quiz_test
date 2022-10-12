@@ -10,6 +10,9 @@ export default function Stats() {
       <h1>Stats</h1>
        <BarChart width={400} height={300} data={data}>
         <XAxis />
+        <YAxis dataKey="total" />
+        <CartesianGrid/>
+        <Tooltip/>
         <Bar dataKey="total" fill="#8884d8" />
       </BarChart>
      </div>
